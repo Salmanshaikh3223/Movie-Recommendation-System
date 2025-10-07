@@ -44,20 +44,20 @@ This project implements an end-to-end Movie Recommendation System, integrating e
 🛠️ Getting Started
 
 Prerequisites
-*Python 3.8+
-*Git
-*Docker
-*DVC
-*Jenkins
-*Kubernetes
-*Comet ML account
+* Python 3.8+
+* Git
+* Docker
+* DVC
+* Jenkins
+* Kubernetes
+* Comet ML account
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Installation
 ``` 
-*git clone https://github.com/YOUR_USERNAME/Movie_Recommendation_MLOps.git
-*cd Movie_Recommendation_System
+git clone https://github.com/YOUR_USERNAME/Movie_Recommendation_MLOps.git
+cd Movie_Recommendation_System
 ``` 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -65,26 +65,26 @@ Installation
 
 Create a virtual environment
 ``` 
-  python -m venv venv
-  source venv/bin/activate    # On Windows: venv\Scripts\activate 
+python -m venv venv
+source venv/bin/activate    # On Windows: venv\Scripts\activate 
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Install dependencies
 ``` 
->pip install -r requirements.txt
+pip install -r requirements.txt
 ``` 
 
 Initialize and Pull Data using DVC
 ```
->dvc init
->dvc pull
+dvc init
+dvc pull
 ``` 
 
 Run the Flask App
 ```
->docker build -t movie-recommender .
->docker run -p 5000:5000 movie-recommender
+docker build -t movie-recommender .
+docker run -p 5000:5000 movie-recommender
 ``` 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
