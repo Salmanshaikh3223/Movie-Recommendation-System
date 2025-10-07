@@ -1,6 +1,6 @@
 # 🎥 Movie Recommendation System with MLOps
 
-This project implements an end-to-end Movie Recommendation System, integrating essential MLOps practices. It covers data versioning, model training, experiment tracking, CI/CD automation, containerization, and deployment with Kubernetes — ensuring reproducibility, scalability, and maintainability.
+### This project implements an end-to-end Movie Recommendation System, integrating essential MLOps practices. It covers data versioning, model training, experiment tracking, CI/CD automation, containerization, and deployment with Kubernetes — ensuring reproducibility, scalability, and maintainability.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -43,7 +43,7 @@ This project implements an end-to-end Movie Recommendation System, integrating e
 
 ## 🛠️ Getting Started
 
-Prerequisites
+### Prerequisites
 * Python 3.8+
 * Git
 * Docker
@@ -90,7 +90,7 @@ docker run -p 5000:5000 movie-recommender
 
 ## 📊 Experiment Tracking with Comet ML
 
-Use Comet ML to:
+### Use Comet ML to:
 
 * Track training and validation metrics  
 * Compare experiment runs  
@@ -101,7 +101,7 @@ Use Comet ML to:
 
 ## 💡 Comet ML logging is automatically enabled during training if your API key is configured in .env.
 
-⚙️ CI/CD Pipeline
+### ⚙️ CI/CD Pipeline
 
 The project uses Jenkins for continuous integration and deployment.
 
@@ -115,13 +115,13 @@ The project uses Jenkins for continuous integration and deployment.
 ## 🧪 Testing
 
 Run unit and integration tests locally:
-
->python tester.py
-
+```
+python tester.py
+```
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 🤝 Contributing
 
-Contributions are welcome!
+### Contributions are welcome!
 
   1. Fork the repository  
   2. Create a feature branch (feature/your-feature)  
