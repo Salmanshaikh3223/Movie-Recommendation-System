@@ -55,34 +55,37 @@ Prerequisites
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Installation
-
+``` 
 *git clone https://github.com/YOUR_USERNAME/Movie_Recommendation_MLOps.git
 *cd Movie_Recommendation_System
-
+``` 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🔧 Setup Instructions
 
 Create a virtual environment
-
- ```  python -m venv venv
-      source venv/bin/activate    # On Windows: venv\Scripts\activate 
+``` 
+  python -m venv venv
+  source venv/bin/activate    # On Windows: venv\Scripts\activate 
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Install dependencies
-
+``` 
 >pip install -r requirements.txt
-
+``` 
 
 Initialize and Pull Data using DVC
+```
 >dvc init
 >dvc pull
+``` 
 
 Run the Flask App
+```
 >docker build -t movie-recommender .
 >docker run -p 5000:5000 movie-recommender
-
+``` 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📊 Experiment Tracking with Comet ML
