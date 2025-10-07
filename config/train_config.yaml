@@ -1,0 +1,18 @@
+data:
+  input_path: 'data/movies.csv'
+  test_size: 0.2
+  random_state: 42
+
+model:
+  vectorizer: 'tfidf'
+  max_features: 5000
+  min_df: 2
+  max_df: 0.8
+
+output:
+  artifacts_path: 'artifacts'
+  model_name: 'movie_recommender'
+
+comet:
+  project_name: 'movie-recommender'
+  workspace: 'your-workspace'

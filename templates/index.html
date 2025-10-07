@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { text-align: center; color: white; margin-bottom: 40px; padding: 30px 0; }
+        .header h1 { font-size: 3em; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .search-section { background: white; border-radius: 15px; padding: 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); margin-bottom: 30px; }
+        .search-input { flex: 1; padding: 15px 20px; font-size: 16px; border: 2px solid #e0e0e0; border-radius: 10px; width: 70%; }
+        .btn { padding: 15px 30px; font-size: 16px; font-weight: bold; border: none; border-radius: 10px; cursor: pointer; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+        .movie-card { background: white; border-radius: 15px; padding: 25px; margin: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        #results { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎬 Movie Recommender</h1>
+            <p>Powered by Machine Learning &&&amp; MLOps</p>
+        </div>
+        <div class="search-section">
+            <h2>Find Similar Movies</h2>
+            <br>
+            <input type="text" id="movieInput" class="search-input" placeholder="Enter a movie title...">
+            <button class="btn" onclick="getRecommendations^(^)">Get Recommendations</button>
+        </div>
+        <div id="results"></div>
+    </div>
+    <script>
+        async function getRecommendations() {
+            const title = document.getElementById('movieInput').value;
+            if (!title) { alert('Please enter a movie title'); return; }
+            const response = await fetch('/api/recommend', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({movie_title: title, n_recommendations: 9}) });
+            const data = await response.json();
+            if (data.success) displayResults(data.recommendations);
+        }
+        function displayResults(movies) {
+            const html = movies.map(m => `<div class="movie-card"><h3>${m.title}</h3><p>${m.genres}</p><p>Rating: ${m.rating.toFixed(1)}</p></div>`).join('');
+            document.getElementById('results').innerHTML = html;
+        }
+    </script>
+</body>
+</html>
