@@ -82,10 +82,10 @@ Run the Flask App
 
 Use Comet ML to:
 
-*Track training and validation metrics
-*Compare experiment runs
-*Visualize model performance and hyperparameters
-*Manage versioned artifacts
+*Track training and validation metrics  
+*Compare experiment runs  
+*Visualize model performance and hyperparameters  
+*Manage versioned artifacts  
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 💡 Comet ML logging is automatically enabled during training if your API key is configured in .env.
@@ -94,11 +94,11 @@ Use Comet ML to:
 
 *The project uses Jenkins for continuous integration and deployment.
 
--Jenkins Pipeline Stages
--Code testing and linting
--Model training and versioning
--Docker image build and push
--Application deployment to Kubernetes
+-Jenkins Pipeline Stages  
+-Code testing and linting  
+-Model training and versioning  
+-Docker image build and push  
+-Application deployment to Kubernetes  
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🧪 Testing
 
@@ -110,11 +110,11 @@ Run unit and integration tests locally:
 
 Contributions are welcome!
 
-1.Fork the repository
-2.Create a feature branch (feature/your-feature)
-3.Commit your changes
-4.Push to the branch
-5.Open a Pull Request
+1.Fork the repository  
+2.Create a feature branch (feature/your-feature)  
+3.Commit your changes  
+4.Push to the branch  
+5.Open a Pull Request  
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📜 License
 
