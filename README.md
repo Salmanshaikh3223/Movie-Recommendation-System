@@ -12,6 +12,7 @@ This project implements an end-to-end Movie Recommendation System, integrating e
 * Containerization: Docker ensures consistency across environments
 * Deployment: Kubernetes manifests for scalable orchestration
 * Web Interface: Flask-powered frontend for real-time movie recommendations
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📁 Project Structure
 ├── .dvc/                 # DVC configuration files
@@ -35,32 +36,34 @@ This project implements an end-to-end Movie Recommendation System, integrating e
 ├── requirements.txt      # Python dependencies
 ├── setup.py              # Project setup config
 ├── tester.py             # Test runner script
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🛠️ Getting Started
-Prerequisites
 
-Python 3.8+
-Git
-Docker
-DVC
-Jenkins
-Kubernetes
-Comet ML account
+Prerequisites
+*Python 3.8+
+*Git
+*Docker
+*DVC
+*Jenkins
+*Kubernetes
+*Comet ML account
+
 Installation
-git clone https://github.com/YOUR_USERNAME/Movie_Recommendation_MLOps.git
-cd Movie_Recommendation_MLOps
+*git clone https://github.com/YOUR_USERNAME/Movie_Recommendation_MLOps.git
+*cd Movie_Recommendation_System
 
 🔧 Setup Instructions
 
 Create a virtual environment
 
-python -m venv venv
-source venv/bin/activate    # On Windows: venv\Scripts\activate
+>python -m venv venv
+>source venv/bin/activate    # On Windows: venv\Scripts\activate
 
 
 Install dependencies
 
-pip install -r requirements.txt
+>pip install -r requirements.txt
 
 
 Initialize and Pull Data using DVC
