@@ -1,4 +1,5 @@
 🎥 Movie Recommendation System with MLOps
+
 This project implements an end-to-end Movie Recommendation System, integrating essential MLOps practices. It covers data versioning, model training, experiment tracking, CI/CD automation, containerization, and deployment with Kubernetes — ensuring reproducibility, scalability, and maintainability.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -15,27 +16,28 @@ This project implements an end-to-end Movie Recommendation System, integrating e
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📁 Project Structure
-├── .dvc/                 # DVC configuration files     
-├── artifacts/            # Stored artifacts like models and datasets   
-├── build/lib/            # Build outputs    
-├── config/               # YAML configs for training, DVC, Comet, etc.    
-├── custom_jenkins/       # Jenkins pipeline scripts  
-├── logs/                 # Application and training logs  
-├── notebook/             # Jupyter notebooks for EDA & experiments  
-├── pipeline/             # ML pipeline scripts  
-├── src/                  # Core source code  
-├── static/               # Web static files (CSS, JS, Images)  
-├── templates/            # Flask HTML templates  
-├── utils/                # Helper functions  
-├── .dvcignore            # Ignore patterns for DVC  
-├── .gitignore            # Ignore patterns for Git  
-├── Dockerfile            # Container specification  
-├── Jenkinsfile           # CI/CD configuration  
-├── application.py        # Flask entrypoint  
-├── deployment.yaml       # Kubernetes deployment config  
-├── requirements.txt      # Python dependencies  
-├── setup.py              # Project setup config  
-├── tester.py             # Test runner script  
+
+>├── .dvc/                 # DVC configuration files     
+>├── artifacts/            # Stored artifacts like models and datasets   
+>├── build/lib/            # Build outputs    
+>├── config/               # YAML configs for training, DVC, Comet, etc.    
+>├── custom_jenkins/       # Jenkins pipeline scripts  
+>├── logs/                 # Application and training logs  
+>├── notebook/             # Jupyter notebooks for EDA & experiments  
+>├── pipeline/             # ML pipeline scripts  
+>├── src/                  # Core source code  
+>├── static/               # Web static files (CSS, JS, Images)  
+>├── templates/            # Flask HTML templates  
+>├── utils/                # Helper functions  
+>├── .dvcignore            # Ignore patterns for DVC  
+>├── .gitignore            # Ignore patterns for Git  
+>├── Dockerfile            # Container specification  
+>├── Jenkinsfile           # CI/CD configuration  
+>├── application.py        # Flask entrypoint  
+>├── deployment.yaml       # Kubernetes deployment config  
+>├── requirements.txt      # Python dependencies  
+>├── setup.py              # Project setup config  
+>├── tester.py             # Test runner script  
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -49,11 +51,14 @@ Prerequisites
 *Jenkins
 *Kubernetes
 *Comet ML account
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Installation
+
 *git clone https://github.com/YOUR_USERNAME/Movie_Recommendation_MLOps.git
 *cd Movie_Recommendation_System
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🔧 Setup Instructions
@@ -77,6 +82,7 @@ Initialize and Pull Data using DVC
 Run the Flask App
 >docker build -t movie-recommender .
 >docker run -p 5000:5000 movie-recommender
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📊 Experiment Tracking with Comet ML
@@ -87,6 +93,7 @@ Use Comet ML to:
 * Compare experiment runs  
 * Visualize model performance and hyperparameters  
 * Manage versioned artifacts  
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 💡 Comet ML logging is automatically enabled during training if your API key is configured in .env.
@@ -100,12 +107,14 @@ The project uses Jenkins for continuous integration and deployment.
 - Model training and versioning  
 - Docker image build and push  
 - Application deployment to Kubernetes  
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🧪 Testing
 
 Run unit and integration tests locally:
 
 >python tester.py
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🤝 Contributing
 
@@ -116,6 +125,7 @@ Contributions are welcome!
   3. Commit your changes  
   4. Push to the branch  
   5. Open a Pull Request  
+  
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📜 License
 
