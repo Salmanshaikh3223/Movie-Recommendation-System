@@ -36,6 +36,7 @@ This project implements an end-to-end Movie Recommendation System, integrating e
 ├── requirements.txt      # Python dependencies  
 ├── setup.py              # Project setup config  
 ├── tester.py             # Test runner script  
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🛠️ Getting Started
@@ -92,7 +93,7 @@ Use Comet ML to:
 
 ⚙️ CI/CD Pipeline
 
-*The project uses Jenkins for continuous integration and deployment.
+The project uses Jenkins for continuous integration and deployment.
 
 - Jenkins Pipeline Stages  
 - Code testing and linting  
