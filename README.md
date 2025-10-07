@@ -1,10 +1,10 @@
-🎥 Movie Recommendation System with MLOps
+# 🎥 Movie Recommendation System with MLOps
 
 This project implements an end-to-end Movie Recommendation System, integrating essential MLOps practices. It covers data versioning, model training, experiment tracking, CI/CD automation, containerization, and deployment with Kubernetes — ensuring reproducibility, scalability, and maintainability.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🚀 Features
+## 🚀 Features
 
 * Data Versioning: Track datasets and model artifacts using DVC
 * Model Training: Modular scripts for configurable and reproducible training workflows
@@ -15,7 +15,7 @@ This project implements an end-to-end Movie Recommendation System, integrating e
 * Web Interface: Flask-powered frontend for real-time movie recommendations
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📁 Project Structure
+## 📁 Project Structure
 
 >├── .dvc/                 # DVC configuration files     
 >├── artifacts/            # Stored artifacts like models and datasets   
@@ -41,7 +41,7 @@ This project implements an end-to-end Movie Recommendation System, integrating e
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🛠️ Getting Started
+## 🛠️ Getting Started
 
 Prerequisites
 * Python 3.8+
@@ -54,14 +54,14 @@ Prerequisites
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Installation
+## Installation
 ``` 
 git clone https://github.com/YOUR_USERNAME/Movie_Recommendation_MLOps.git
 cd Movie_Recommendation_System
 ``` 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🔧 Setup Instructions
+## 🔧 Setup Instructions
 
 Create a virtual environment
 ``` 
@@ -70,25 +70,25 @@ source venv/bin/activate    # On Windows: venv\Scripts\activate
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Install dependencies
+### Install dependencies
 ``` 
 pip install -r requirements.txt
 ``` 
 
-Initialize and Pull Data using DVC
+### Initialize and Pull Data using DVC
 ```
 dvc init
 dvc pull
 ``` 
 
-Run the Flask App
+### Run the Flask App
 ```
 docker build -t movie-recommender .
 docker run -p 5000:5000 movie-recommender
 ``` 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📊 Experiment Tracking with Comet ML
+## 📊 Experiment Tracking with Comet ML
 
 Use Comet ML to:
 
@@ -99,7 +99,7 @@ Use Comet ML to:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-💡 Comet ML logging is automatically enabled during training if your API key is configured in .env.
+## 💡 Comet ML logging is automatically enabled during training if your API key is configured in .env.
 
 ⚙️ CI/CD Pipeline
 
@@ -112,14 +112,14 @@ The project uses Jenkins for continuous integration and deployment.
 - Application deployment to Kubernetes  
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-🧪 Testing
+## 🧪 Testing
 
 Run unit and integration tests locally:
 
 >python tester.py
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome!
 
@@ -130,6 +130,6 @@ Contributions are welcome!
   5. Open a Pull Request  
   
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-📜 License
+## 📜 License
 
 This project is open-source under the MIT License.
