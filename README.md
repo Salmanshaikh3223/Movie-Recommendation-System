@@ -1,7 +1,7 @@
 🎥 Movie Recommendation System with MLOps
 This project implements an end-to-end Movie Recommendation System, integrating essential MLOps practices. It covers data versioning, model training, experiment tracking, CI/CD automation, containerization, and deployment with Kubernetes — ensuring reproducibility, scalability, and maintainability.
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🚀 Features
 
