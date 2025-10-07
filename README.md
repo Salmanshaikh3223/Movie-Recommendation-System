@@ -15,10 +15,10 @@ This project implements an end-to-end Movie Recommendation System, integrating e
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📁 Project Structure
-├── .dvc/                 # DVC configuration files   
-├── artifacts/            # Stored artifacts like models and datasets  
-├── build/lib/            # Build outputs  
-├── config/               # YAML configs for training, DVC, Comet, etc. 
+├── .dvc/                 # DVC configuration files     
+├── artifacts/            # Stored artifacts like models and datasets   
+├── build/lib/            # Build outputs    
+├── config/               # YAML configs for training, DVC, Comet, etc.    
 ├── custom_jenkins/       # Jenkins pipeline scripts  
 ├── logs/                 # Application and training logs  
 ├── notebook/             # Jupyter notebooks for EDA & experiments  
@@ -48,10 +48,12 @@ Prerequisites
 *Jenkins
 *Kubernetes
 *Comet ML account
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Installation
 *git clone https://github.com/YOUR_USERNAME/Movie_Recommendation_MLOps.git
 *cd Movie_Recommendation_System
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🔧 Setup Instructions
 
@@ -60,6 +62,7 @@ Create a virtual environment
 >python -m venv venv
 >source venv/bin/activate    # On Windows: venv\Scripts\activate
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Install dependencies
 
@@ -67,64 +70,52 @@ Install dependencies
 
 
 Initialize and Pull Data using DVC
-
-dvc init
-dvc pull
-
+>dvc init
+>dvc pull
 
 Run the Flask App
-
-docker build -t movie-recommender .
-docker run -p 5000:5000 movie-recommender
+>docker build -t movie-recommender .
+>docker run -p 5000:5000 movie-recommender
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📊 Experiment Tracking with Comet ML
 
 Use Comet ML to:
 
-Track training and validation metrics
-
-Compare experiment runs
-
-Visualize model performance and hyperparameters
-
-Manage versioned artifacts
+*Track training and validation metrics
+*Compare experiment runs
+*Visualize model performance and hyperparameters
+*Manage versioned artifacts
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 💡 Comet ML logging is automatically enabled during training if your API key is configured in .env.
 
 ⚙️ CI/CD Pipeline
 
-The project uses Jenkins for continuous integration and deployment.
+*The project uses Jenkins for continuous integration and deployment.
 
-Jenkins Pipeline Stages
-
-Code testing and linting
-
-Model training and versioning
-
-Docker image build and push
-
-Application deployment to Kubernetes
-
+-Jenkins Pipeline Stages
+-Code testing and linting
+-Model training and versioning
+-Docker image build and push
+-Application deployment to Kubernetes
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🧪 Testing
 
 Run unit and integration tests locally:
 
-python tester.py
-
+>python tester.py
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🤝 Contributing
 
 Contributions are welcome!
 
-Fork the repository
-
-Create a feature branch (feature/your-feature)
-
-Commit your changes
-
-Push to the branch
-
-Open a Pull Request
-
+1.Fork the repository
+2.Create a feature branch (feature/your-feature)
+3.Commit your changes
+4.Push to the branch
+5.Open a Pull Request
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📜 License
 
 This project is open-source under the MIT License.
