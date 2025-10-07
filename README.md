@@ -15,27 +15,27 @@ This project implements an end-to-end Movie Recommendation System, integrating e
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📁 Project Structure
-├── .dvc/                 # DVC configuration files
-├── artifacts/            # Stored artifacts like models and datasets
-├── build/lib/            # Build outputs
-├── config/               # YAML configs for training, DVC, Comet, etc.
-├── custom_jenkins/       # Jenkins pipeline scripts
-├── logs/                 # Application and training logs
-├── notebook/             # Jupyter notebooks for EDA & experiments
-├── pipeline/             # ML pipeline scripts
-├── src/                  # Core source code
-├── static/               # Web static files (CSS, JS, Images)
-├── templates/            # Flask HTML templates
-├── utils/                # Helper functions
-├── .dvcignore            # Ignore patterns for DVC
-├── .gitignore            # Ignore patterns for Git
-├── Dockerfile            # Container specification
-├── Jenkinsfile           # CI/CD configuration
-├── application.py        # Flask entrypoint
-├── deployment.yaml       # Kubernetes deployment config
-├── requirements.txt      # Python dependencies
-├── setup.py              # Project setup config
-├── tester.py             # Test runner script
+├── .dvc/                 # DVC configuration files   
+├── artifacts/            # Stored artifacts like models and datasets  
+├── build/lib/            # Build outputs  
+├── config/               # YAML configs for training, DVC, Comet, etc. 
+├── custom_jenkins/       # Jenkins pipeline scripts  
+├── logs/                 # Application and training logs  
+├── notebook/             # Jupyter notebooks for EDA & experiments  
+├── pipeline/             # ML pipeline scripts  
+├── src/                  # Core source code  
+├── static/               # Web static files (CSS, JS, Images)  
+├── templates/            # Flask HTML templates  
+├── utils/                # Helper functions  
+├── .dvcignore            # Ignore patterns for DVC  
+├── .gitignore            # Ignore patterns for Git  
+├── Dockerfile            # Container specification  
+├── Jenkinsfile           # CI/CD configuration  
+├── application.py        # Flask entrypoint  
+├── deployment.yaml       # Kubernetes deployment config  
+├── requirements.txt      # Python dependencies  
+├── setup.py              # Project setup config  
+├── tester.py             # Test runner script  
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🛠️ Getting Started
